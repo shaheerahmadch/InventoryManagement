@@ -2,24 +2,32 @@
 
 A professional, high-end inventory management system built for the Power Apps ecosystem. This project serves as a comprehensive sample for building complex, responsive CRM and ERP-style applications using React, TypeScript, and Microsoft's Fluent UI design system.
 
-![Inventory Dashboard](https://raw.githubusercontent.com/shaheerahmadch/InventoryManagement/main/public/dashboard-preview.png) *(Placeholder for dashboard screenshot)*
+![Inventory Dashboard](./Previews/dashboard.png)
 
 ## 🚀 Overview
 
 This application provides a robust suite of tools for managing products, tracking stock levels, and monitoring warehouse operations. It is pre-configured to work seamlessly as a **Power Apps Code App**, allowing developers to build complex custom interfaces that run directly within the Power Platform.
 
+## 📦 Download Solutions
+
+Get the latest version of the Inventory Management solution for Power Apps:
+
+- **[📥 Download Unmanaged Solution](./Solutions/InventoryManagement_1_0_0_1.zip)** (Recommended for developers)
+- **[📦 Download Managed Solution](./Solutions/InventoryManagement_1_0_0_2_managed.zip)** (Recommended for production)
+
 ## ✨ Key Features
 
 - **📊 Modern Dashboard**: Real-time overview of inventory statistics, low-stock alerts, and recent activities.
-- **📦 Product Catalog**: Comprehensive product management with detailed views and categorization.
 - **🔄 Stock Management**:
   - **Receive Stock**: Streamlined workflow for logging incoming shipments.
   - **Issue Stock**: Efficient process for tracking outgoing inventory.
   - **Stock Log**: Detailed audit trail of all inventory movements.
-- **⚠️ Low Stock Alerts**: Proactive notifications for items falling below minimum thresholds.
+  ![Stock Log](./Previews/stock_log.png)
 - **🏭 Location Manager**: Manage warehouse sections and storage locations.
+  ![Location Manager](./Previews/locations.png)
 - **🤝 Supplier Management**: Track supplier information and associated product statistics.
 - **⚙️ Advanced Settings**: Customizable system configurations.
+  ![Settings](./Previews/settings.png)
 
 ## 🛠️ Tech Stack
 
