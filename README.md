@@ -1,75 +1,87 @@
-# React + TypeScript + Vite
+# Inventory Management - Open Source Sample
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, high-end inventory management system built for the Power Apps ecosystem. This project serves as a comprehensive sample for building complex, responsive CRM and ERP-style applications using React, TypeScript, and Microsoft's Fluent UI design system.
 
-It is preconfigured to work with Power Apps Code Apps.
+![Inventory Dashboard](https://raw.githubusercontent.com/shaheerahmadch/InventoryManagement/main/public/dashboard-preview.png) *(Placeholder for dashboard screenshot)*
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application provides a robust suite of tools for managing products, tracking stock levels, and monitoring warehouse operations. It is pre-configured to work seamlessly as a **Power Apps Code App**, allowing developers to build complex custom interfaces that run directly within the Power Platform.
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **📊 Modern Dashboard**: Real-time overview of inventory statistics, low-stock alerts, and recent activities.
+- **📦 Product Catalog**: Comprehensive product management with detailed views and categorization.
+- **🔄 Stock Management**:
+  - **Receive Stock**: Streamlined workflow for logging incoming shipments.
+  - **Issue Stock**: Efficient process for tracking outgoing inventory.
+  - **Stock Log**: Detailed audit trail of all inventory movements.
+- **⚠️ Low Stock Alerts**: Proactive notifications for items falling below minimum thresholds.
+- **🏭 Location Manager**: Manage warehouse sections and storage locations.
+- **🤝 Supplier Management**: Track supplier information and associated product statistics.
+- **⚙️ Advanced Settings**: Customizable system configurations.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vite.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI System**: [Fluent UI React v9](https://react.fluentui.dev/)
+- **Icons**: [Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons)
+- **Platform**: [Power Apps Code Apps](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/overview)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🏁 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [Node.js](https://nodejs.org/) (Latest LTS recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shaheerahmadch/InventoryManagement.git
+   cd InventoryManagement
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Create a production build:
+```bash
+npm run build
 ```
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/ # Reusable UI components
+├── data/       # Mock data and data management
+├── screens/    # Main application views (Dashboard, Products, etc.)
+├── styles/     # Theme definitions and global styles
+└── App.tsx     # Main application entry and navigation
+```
+
+## 🔌 Power Apps Integration
+
+This project is optimized for use with the **Power Apps Component Framework (PCF)**. It includes `@microsoft/power-apps` and `@microsoft/power-apps-vite` to ensure compatibility and streamlined deployment to the Power Platform.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+*Built with ❤️ by [Shaheer Ahmad](https://github.com/shaheerahmadch)*
